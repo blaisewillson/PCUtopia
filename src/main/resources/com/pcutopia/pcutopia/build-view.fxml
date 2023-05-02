@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxWidth="600" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pcutopia.pcutopia.BuildController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="exportBuild" mnemonicParsing="false" onAction="#exportBuild" text="Export Build" />
+                  <MenuItem fx:id="importBuild" mnemonicParsing="false" onAction="#importBuild" text="Import Build" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit Builds">
+            <items>
+              <MenuItem fx:id="addBuild" mnemonicParsing="false" onAction="#addBuild" text="Add Build" />
+                  <MenuItem fx:id="deleteBuild" mnemonicParsing="false" onAction="#deleteBuild" text="Delete Build" />
+                  <MenuItem fx:id="editBuild" mnemonicParsing="false" onAction="#editBuild" text="Edit Build" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Logout">
+              <items>
+                <MenuItem fx:id="logoutUser" mnemonicParsing="false" onAction="#logout" text="Logout" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+         <children>
+            <ListView fx:id="buildList" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ListView>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,10 @@
+UserID: 123456
+BuildID: 123456
+BuildName: Sample Build
+CPU: r5 1600x
+GPU: RTX 3070
+MOBO: z490
+Case: torrent nano
+PSU: RM850x
+RAM: RGB Thing
+-------

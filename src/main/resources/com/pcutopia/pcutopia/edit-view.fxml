@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem fx:id="addPart" mnemonicParsing="false" text="Add" />
+                  <MenuItem fx:id="deletePart" mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox VBox.vgrow="ALWAYS">
+         <children>
+            <ListView fx:id="partList" HBox.hgrow="ALWAYS" />
+            <VBox alignment="CENTER" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button fx:id="backBuild" mnemonicParsing="false" text="Back to Build List" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
